@@ -1,40 +1,137 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Website dann</title>
+    <title>Dandi - Web Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>🌟 Website Interaktif Saya! 🌟</h1>
-        <p id="nama-user">Klik tombol di bawah untuk berinteraksi!</p>
-        
-        <div class="tombol-container">
-            <button onclick="sapa()">👋 Sapa Saya</button>
-            <button onclick="ubahWarna()">🎨 Ubah Warna</button>
-            <button onclick="tambahMakanan()">🍽 Tambah Makanan</button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Dandi</h1>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        
-        <h2>🔗 Link Favorit</h2>
-        <a href="https://google.com">Google</a>
-        <a href="https://youtube.com">YouTube</a>
-        <a href="https://github.com">GitHub</a>
-        
-        <h2>🖼 Gambar Favorit</h2>
-        <img src="https://via.placeholder.com/400x250/3498db/ffffff?text=Website+Interaktif" alt="Gambar keren">
-        
-        <h2>🍕 Makanan Favorit</h2>
-        <ul id="list-makanan">
-            <li>Nasi Goreng Spesial</li>
-            <li>Pizza Margherita</li>
-            <li>Sushi Salmon</li>
-            <li>Bakso Malang</li>
-        </ul>
-        
-        <h2>📝 Tentang Website Ini</h2>
-        <p>Website ini dibuat dengan HTML, CSS, dan JavaScript! Coba klik tombol-tombol di atas untuk melihat interaktifitas! 🎮</p>
-    </div>
-    
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Dandi B.</span></h1>
+                <h2>Web Developer</h2>
+                <p>I create interesting and functional websites using HTML, CSS, and JavaScript</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('projects')">View My Work</button>
+                    <button class="btn-secondary" onclick="scrollToSection('contact')">Contact Me</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-pic">
+                    <img src="https://via.placeholder.com/300x300/3498db/ffffff?text=YOUR+PHOTO" alt="Dandi Profile">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I'm a passionate web developer who recently started my coding journey. I love creating interactive and user-friendly websites that solve real-world problems.</p>
+                <p>Currently learning modern web technologies and always excited to take on new challenges!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>HTML</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                    <span>85%</span>
+                </div>
+                <div class="skill-item">
+                    <h3>CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                    <span>80%</span>
+                </div>
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%"></div>
+                    </div>
+                    <span>70%</span>
+                </div>
+                <div class="skill-item">
+                    <h3>Git/GitHub</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                    <span>75%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/e74c3c/ffffff?text=Interactive+Website" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Interactive Website</h3>
+                        <p>My first interactive website built with HTML, CSS, and JavaScript featuring dynamic color changes and user interactions.</p>
+                        <div class="project-links">
+                            <a href="https://danndk5.github.io/website-dann" target="_blank" class="btn-small">Live Demo</a>
+                            <a href="https://github.com/danndk5/website-dann" target="_blank" class="btn-small">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tempat untuk project selanjutnya -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm always interested in new opportunities and collaborations!</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <a href="mailto:dandimho5@gmail.com">dandimho5@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <h3>💼 LinkedIn</h3>
+                        <a href="#" target="_blank">linkedin.com/in/yourprofile</a>
+                    </div>
+                    <div class="contact-item">
+                        <h3>🐙 GitHub</h3>
+                        <a href="https://github.com/danndk5" target="_blank">github.com/danndk5</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
